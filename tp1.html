@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="multi-step-form">
+        <div class="form-step">
+            <h2>Step 1: Your details</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-step">
+            <h2>Step 2: Delivery address</h2>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required>
+        </div>
+        <div class="form-step">
+            <h2>Step 3: Card details</h2>
+            <label>Card type</label>
+            <div class="card-types">
+                <input type="radio" id="visa" name="card_type" value="visa" required>
+                <label for="visa"><img src="visa.png" alt="VISA"></label>
+                <input type="radio" id="amex" name="card_type" value="amex" required>
+                <label for="amex"><img src="amex.png" alt="Amex"></label>
+                <input type="radio" id="mastercard" name="card_type" value="mastercard" required>
+                <label for="mastercard"><img src="mastercard.png" alt="Mastercard"></label>
+            </div>
+            <label for="card_number">Card number</label>
+            <input type="text" id="card_number" name="card_number" required>
+            <label for="expiry_date">Expiry date</label>
+            <input type="text" id="expiry_date" name="expiry_date" required>
+            <label for="security_code">Security code</label>
+            <input type="text" id="security_code" name="security_code" required>
+        </div>
+        <button type="submit">BUY IT!</button>
+    </form>
+</body>
+</html>
